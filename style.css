@@ -1,0 +1,89 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+  }
+  
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); }
+    40% { -webkit-transform: translateY(-30px); }
+    60% { -webkit-transform: translateY(-15px); }
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #a165f0;
+      background-image: url(khey.jpg);
+  }
+  
+  #envelope {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: #f065d2;
+      border: 2px solid #1b1a1c;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-animation: bounce 2s ease-in-out infinite;
+      animation: bounce 2s ease-in-out infinite;
+  }
+  
+  #envelope-front {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      background-color: #d1b5f7;
+      border: 2px solid #1b1a1c;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #envelope-text {
+      font-size: 16px;
+      font-weight: bold;
+      color: #8b4513;
+      text-transform: uppercase;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  #message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background-color: #ffffcc;
+      border: 2px solid #8b4513;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+  }
+  
+  #close-message {
+      display: block;
+      margin: 10px auto;
+      padding: 5px 10px;
+      background-color: #8b4513;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
